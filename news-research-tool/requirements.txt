@@ -1,0 +1,15 @@
+# LLM News Research Tool - Dependencies
+# Fully compatible with Python 3.10, 3.11, 3.12 and Python 3.13
+
+streamlit>=1.35.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+numpy>=1.26.0
+python-dotenv>=1.0.0
+pytest>=8.0.0
+
+# Optional machine learning packages:
+# Pre-built wheels are standard on Python 3.10 - 3.12.
+# On Python 3.13, the app automatically runs in zero-dependency vectorizer mode if these are not installed.
+sentence-transformers>=3.0.0; python_version < "3.13"
+faiss-cpu>=1.8.0; python_version < "3.13"
